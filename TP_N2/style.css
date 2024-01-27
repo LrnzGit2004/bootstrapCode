@@ -1,0 +1,122 @@
+.logo {
+    font-size: 25px;
+    color: #fe8903;
+}
+body{
+    background: #4a305d;
+}
+a {
+    text-decoration: none;
+}
+.logo span {
+    color: #eeedee;
+}
+.carousel-inner img {
+    margin: auto;
+}
+
+#menu li a.barre {
+    color: #c2b5be; 
+    text-decoration: none;
+    position: relative;
+}
+
+#menu li a.barre::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #fe8903;
+    transition: 1s;
+}
+#menu li a.barre:hover::before, #menu li a.barre:hover {
+    width: 100%;
+    color: #eeedee;
+    
+}
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#4a305d), url(images/page1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* margin: 30px 0; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#home h2 {
+    color: transparent;
+    -webkit-text-stroke: #fff 1px;
+    padding-bottom: 10px;
+    transition: .8s;
+}
+#home h2:hover {
+    -webkit-text-stroke: #fe8903 1px;
+}
+#home h4 {
+    color: #eeedee;
+    padding-bottom:10px ;
+
+}
+#home p {
+    color: #c2b5be;
+    padding-bottom: 20px;
+}
+/* Actualites */
+
+
+#actu, #Prospectus {
+    padding: 0 10%; /* putain de merde j'avais mis pixels !*/
+
+}
+.title_actu, .title_prospect, .title_liens {
+    text-transform: capitalize;
+    margin: 70px 0 30px 0;
+    font-weight: bold;
+    color: #eeedee;
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+
+}
+.title_actu::after, .title_prospect::after, .title_liens::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fe8903;
+    width: 5px;
+
+}
+
+.btn_me {
+    margin-top: 60px;
+    padding: 10px 60px;
+    border: 2px solid #fe8903;
+    color: #fe8903;
+    font-weight: bold;
+}
+
+.card-title, .card-text{
+    color: #eeedee;
+}
+.brille:hover {
+    box-shadow: 0 0 10px #fe8903;
+}
+
+.foot button {
+    color: #fff;
+}
+
+/* une petite media query qu'en meme parceque bootsrap c'est moche :) */
+@media  (width <= 842px) {
+    .text_display {
+        display: none;
+    }
+}
